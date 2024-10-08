@@ -1,0 +1,94 @@
+@import url('../Fonts.css');
+
+.knowCat {
+  width: 100vw;
+  margin-top: 3vw;
+  background: #f9f7ef;
+  padding: 3vw 4vw;
+}
+
+.knowCat h1 {
+  font-family: 'Barbieri-Book';
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+  text-align: center;
+}
+
+.knowCatContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up {
+  margin-top: 10vw;
+}
+.knowCatImage {
+  height: 18vw;
+  width: 20vw;
+}
+
+.knowCatComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.knowCatComponent h1 {
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  margin: 1vw 0;
+  font-family: 'Barbieri-Book';
+}
+.knowCatComponent p {
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+  font-family: 'Barbieri-Light';
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 910px) {
+  .knowCatImage {
+    height: 30vw;
+    width: 32vw;
+  }
+  .knowCat > h1 {
+    font-size: 7vw;
+    margin-top: 5vw;
+  }
+  .knowCatContainer h1 {
+    font-size: 4vw;
+  }
+  .knowCatContainer p {
+    font-size: 3vw;
+  }
+  .up {
+    margin-top: 20vw;
+  }
+  .knowCatContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .knowCat > h1 {
+    font-size: 10vw;
+    margin-bottom: 10vw;
+  }
+  .knowCat {
+    margin-top: 10vw;
+  }
+  .knowCatImage {
+    height: 38vw;
+    width: 42vw;
+  }
+  .knowCatContainer h1 {
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+  }
+  .knowCatContainer p {
+    font-size: 4vw;
+  }
+}

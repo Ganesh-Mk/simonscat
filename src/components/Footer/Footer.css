@@ -1,0 +1,174 @@
+@import url('../Fonts.css');
+
+.footer {
+  position: relative;
+  margin-top: 10vw;
+}
+
+.footer h1 {
+  font-size: 2.5vw;
+  color: rgba(0, 0, 0, 0.89);
+  font-family: 'Barbieri-Book';
+  word-spacing: 0.3vw;
+  letter-spacing: 0.1vw;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+.footer p {
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.872);
+  font-family: 'Barbieri-Book';
+  word-spacing: 0.2vw;
+}
+
+.iconsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2vw;
+  gap: 1vw;
+}
+
+.footerImage {
+  background: url('https://simonscat.com/images/footer-extension.svg') no-repeat
+    center/cover;
+  width: 100vw;
+  height: 3vw;
+}
+.catFloatingImage svg {
+  position: absolute;
+  height: 27vw;
+  top: 0vw;
+  transform-origin: 3vw top;
+  transform: rotate(1-5deg);
+  left: 10vw;
+  animation: floating 1.7s ease-in-out infinite;
+}
+.footerLogoImage svg {
+  position: absolute;
+  height: 8vw;
+  bottom: 1vw;
+  right: 4vw;
+}
+@keyframes floating {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+.footerContainer {
+  height: 30vw;
+  width: 100vw;
+  padding: 4vw 5vw 0 30vw;
+  background: #499ebd;
+  display: grid;
+  grid-template-columns: 0fr 0fr 1fr 1fr 1fr;
+}
+
+.footerSubContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer1P {
+  margin: 2vw 0;
+  text-align: center;
+}
+
+.catFloatingImage {
+  background: url('');
+}
+.iconImage {
+  width: 2.8vw;
+  height: 2.8vw;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.iconImage:hover {
+  transform: scale(1.2);
+}
+
+#footer1 {
+  margin-right: 4vw;
+}
+.exploreItems {
+  margin-top: 2vw;
+}
+
+.exploreItems p {
+  font-size: 1.5vw;
+  margin: 0.6vw 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.exploreItems p::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.1rem;
+  background: black;
+  bottom: -0.2rem;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100rem;
+}
+
+.exploreItems p:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80vw;
+    padding: 4vw 5vw 0 39vw;
+  }
+  #footer1 {
+    margin-right: 0;
+  }
+  .footer h1 {
+    font-size: 6vw;
+  }
+  .footer p {
+    font-size: 4vw;
+    text-align: right;
+  }
+  .catFloatingImage svg {
+    height: 63vw;
+    left: 9vw;
+    transform-origin: 15vw top;
+  }
+  .footerSubContainer {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 2vw;
+    border-bottom: 0.3vw solid #393939;
+  }
+  .iconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vw;
+  }
+
+  .iconImage {
+    width: 6.8vw;
+    height: 6.8vw;
+    margin: 0 1vw;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .exploreItems {
+    margin-top: 2vw;
+    display: flex;
+    gap: 4vw;
+  }
+}

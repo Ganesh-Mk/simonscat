@@ -1,0 +1,82 @@
+@import url('../Fonts.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainPage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0 3rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background: #ffefa6;
+}
+
+.h1Font {
+  font-family: 'Barbieri-Book';
+  font-size: 15vw;
+  letter-spacing: 9px;
+}
+.pFont {
+  font-family: 'Barbieri-Book';
+  font-size: 2.5vw;
+  word-spacing: 5px;
+  text-align: center;
+  color: #000000ab;
+  margin-bottom: 3vw;
+}
+.mainPageLeft {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.mainPageRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainPageRight path {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+text {
+  font-family: 'Barbieri-Book';
+}
+
+@media screen and (max-width: 910px) {
+  .mainPage {
+    grid-template: none;
+  }
+  .mainPageLeft {
+    order: 1;
+  }
+  .h1Font {
+    margin-top: 10vw;
+  }
+  .pFont {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+  }
+  .mainPageRight {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainPage {
+    margin-top: 0;
+  }
+  .h1Font {
+    font-size: 26vw;
+  }
+  .pFont {
+    font-size: 5vw;
+  }
+}

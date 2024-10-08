@@ -1,0 +1,57 @@
+.comic {
+  width: 100vw;
+}
+
+.comicUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18vw 5vw 5vw 5vw;
+  margin-top: -8vw;
+  box-shadow: -1px -1px 60px -44px black;
+  background: #f9f7ef;
+  border-radius: 70% 70% 0 0;
+}
+
+.comicUp h1 {
+  font-family: 'Barbieri-Book';
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+}
+.comicUp h2 {
+  font-family: 'Barbieri-Light';
+  font-size: 2vw;
+  color: rgb(66, 66, 66);
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+}
+
+.comicUp a {
+  text-decoration: none;
+  font-family: 'Barbieri-Regular';
+  font-size: 1.6vw;
+  color: rgb(44, 44, 44);
+  border-bottom: 0.2vw solid black;
+  text-transform: capitalize;
+  letter-spacing: 0.2vw;
+}
+
+.comicImage {
+  width: 100vw;
+  height: 30vw;
+  background: url('https://simonscat.com/assets/images/_1920xAUTO_crop_center-center_85_none_ns/8047/simons-cat-daily-comics-1.webp?v=1704987989')
+    no-repeat center/cover;
+}
+
+@media screen and (max-width: 500px) {
+  .comic h1 {
+    font-size: 10vw;
+  }
+  .comic h2 {
+    font-size: 3.5vw;
+  }
+  .comic a {
+    font-size: 3.5vw;
+  }
+}

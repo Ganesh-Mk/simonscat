@@ -1,0 +1,198 @@
+@import url('../Fonts.css');
+
+.header {
+  z-index: 999;
+}
+#headerSVG {
+  position: fixed;
+  top: -15px;
+  height: 21vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.headerItems {
+  width: 100vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  top: 1vw;
+  padding: 1.5vw 5vw;
+  position: fixed;
+}
+
+.headerCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  transition: all 0.5s ease-out;
+}
+
+.headerCenter a {
+  font-size: 2.2vw;
+  color: black;
+  font-family: 'Barbieri-Book';
+  text-decoration: none;
+  border-bottom: 0;
+  position: relative;
+}
+
+.headerCenter a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  background: black;
+  bottom: -0.2rem;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100rem;
+}
+
+.headerCenter a:hover::after {
+  width: 100%;
+}
+
+.headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid black;
+  z-index: 99;
+}
+
+.headerRight input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Barbieri-Light';
+  font-size: 1.8vw;
+  letter-spacing: 0.05rem;
+  width: 13vw;
+  word-spacing: 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+.headerRight input::placeholder {
+  color: black;
+  text-align: left;
+  font-family: 'Barbieri-Light';
+  font-size: 2vw;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.3rem;
+}
+
+#searchIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.catDownImage {
+  position: absolute;
+  background: url('https://avatars.githubusercontent.com/u/29308797?v=4')
+    no-repeat center/cover;
+  height: 70vw;
+  width: 70vw;
+  bottom: 0;
+  left: 0;
+}
+
+.headerItems svg {
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.right {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7vw;
+  cursor: pointer;
+}
+.stroke {
+  transition: all 0.2s linear;
+  width: 5vw;
+  height: 0.4vw;
+  border-radius: 100rem;
+  background: black;
+  z-index: 150;
+}
+
+.rotateTop {
+  transform: rotate(45deg);
+  transform-origin: 20%;
+}
+.rotateBottom {
+  transform: rotate(-45deg);
+  transform-origin: 20%;
+}
+
+@media screen and (max-width: 910px) {
+  .right {
+    display: flex;
+  }
+  .catDownImage {
+    height: 28vw;
+    width: 46vw;
+  }
+  .headerRight {
+    border-bottom: none;
+  }
+  #headerSVG {
+    height: 15vh;
+  }
+  .headerRight input {
+    display: none;
+    font-size: 1.5rem;
+  }
+  .headerRight input::placeholder {
+    font-size: 1.5rem;
+  }
+  .headerCenter {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    padding: 5rem;
+    height: 100vh;
+    width: 100vw;
+    background: #ffefa6;
+  }
+  .headerCenter a {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #searchIcon {
+    width: 5.5rem;
+    height: 2.7rem;
+  }
+  .headerCenter {
+    justify-content: center;
+  }
+  .headerItems svg {
+    width: 45vw;
+    height: 13vw;
+  }
+  .catDownImage {
+    height: 68vw;
+    width: 76vw;
+  }
+  .stroke {
+    width: 7vw;
+    height: 0.6vw;
+  }
+  .right {
+    gap: 0.3rem;
+  }
+  .rotateTop {
+    transform-origin: 1.7vw;
+  }
+  .rotateBottom {
+    transform-origin: 1.7vw;
+  }
+}

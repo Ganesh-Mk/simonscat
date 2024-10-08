@@ -1,0 +1,139 @@
+@import url('../Fonts.css');
+
+.filmsContainer {
+  width: 100vw;
+  background: #f9f7ef;
+  padding: 10vw 0;
+}
+
+.filmsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.filmsInfo h1 {
+  font-family: 'Barbieri-Book';
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+}
+
+.filmsInfo a {
+  text-decoration: none;
+  font-family: 'Barbieri-Regular';
+  font-size: 1.6vw;
+  color: rgb(44, 44, 44);
+  border-bottom: 0.2vw solid black;
+  text-transform: capitalize;
+  letter-spacing: 0.2vw;
+}
+
+.scrollContainer {
+  width: 100vw;
+  margin: 2vw 0;
+  display: flex;
+  gap: 3vw;
+  overflow: scroll;
+  padding-right: 7vw;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 2vw 2vw 0 0;
+}
+
+.image {
+  width: 32vw;
+  height: 18vw;
+  border-radius: 2vw 2vw 0 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.filmsBoxs {
+  background: white;
+  box-shadow: 1px 1px 36px -24px black;
+  border-radius: 2vw;
+  transition: all 0.2s ease-in-out;
+}
+.filmsBoxs:hover {
+  background: #ffefa6;
+}
+.filmsBoxs:hover .image {
+  transform: scale(1.1);
+}
+
+.imageInfoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.2vw 0;
+  padding: 0 1vw;
+}
+
+.imageInfoContainer h2 {
+  font-family: 'Barbieri-Book';
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  text-align: center;
+}
+
+.imageInfoContainer h3 {
+  font-family: 'Barbieri-Book';
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  color: #31cc4b;
+}
+.imageInfoContainer p {
+  font-family: 'Barbieri-Book';
+  font-size: 1.3vw;
+  color: rgb(67, 67, 67);
+  text-transform: capitalize;
+  letter-spacing: 0.05vw;
+  word-spacing: 0.2vw;
+  text-align: center;
+}
+@media screen and (max-width: 910px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .filmsContainer {
+    padding: 10vw 0 35vw 0;
+  }
+  .filmsInfo h1 {
+    font-size: 10vw;
+  }
+  .filmsInfo {
+    flex-direction: column;
+  }
+  .filmsInfo a {
+    font-size: 3.5vw;
+  }
+  .imageInfoContainer h2 {
+    margin: 3vw 0 0 0;
+    font-size: 4vw;
+  }
+  .imageInfoContainer p {
+    font-size: 3.4vw;
+  }
+  .scrollContainer {
+    margin-bottom: 5vw;
+  }
+}

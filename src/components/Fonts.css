@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Barbieri-Light';
+  src: url('https://db.onlinewebfonts.com/t/508c2d054a8c23a820d9a53f39827f0a.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/508c2d054a8c23a820d9a53f39827f0a.woff')
+      format('woff');
+}
+@font-face {
+  font-family: 'Barbieri-Book';
+  src: url('https://db.onlinewebfonts.com/t/097bacabca427767b50d5d36d749f085.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/097bacabca427767b50d5d36d749f085.woff')
+      format('woff');
+}

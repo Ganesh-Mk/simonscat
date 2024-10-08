@@ -1,0 +1,106 @@
+@import url('../Fonts.css');
+
+.ShopContainer {
+  width: 100vw;
+  padding: 10vw 0 2vw 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shopCatImage {
+  height: 11vw;
+  width: 25vw;
+  background: url('https://shop.simonscat.com/cdn/shop/t/24/assets/cat-mouse.svg?v=34983560576274513621694007981')
+    no-repeat center/cover;
+}
+
+.ShopContainer h1 {
+  font-family: 'Barbieri-Book';
+  font-size: 6vw;
+  color: #eba3b0;
+  letter-spacing: 0.5vw;
+  margin: 2vw 0 0 0;
+}
+
+.ShopContainer p {
+  font-family: 'Barbieri-Light';
+  font-size: 2.2vw;
+  word-spacing: 0.5vw;
+  color: #333333;
+}
+
+.scrollContainer {
+  width: 100vw;
+  display: flex;
+  gap: 3vw;
+  padding: 5vw 7vw 0 5vw;
+  overflow: scroll;
+  background: white;
+  margin: 0;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.shopMainImage {
+  width: 100vw;
+  height: 30vw;
+  background: url('https://shop.simonscat.com/cdn/shop/files/Web_Shop_Banner_Purrrsonalised_desktop.jpg?v=1643728071')
+    no-repeat center/cover;
+  position: relative;
+}
+
+.catSleepingImage {
+  position: absolute;
+  width: 21vw;
+  height: 18vw;
+  background: url('https://fcbk.su/_data/stickers/simons_cat/simons_cat_10.png')
+    no-repeat center/cover;
+  top: -11.4vw;
+  /* left: 41vw; */
+  transition: all 0.5s ease-in-out;
+}
+
+/* .catSleepingImage:hover {
+  left: 1vw;
+} */
+@media screen and (max-width: 500px) {
+  .catSleepingImage {
+    width: 49vw;
+    height: 49vw;
+    top: -29.4vw;
+  }
+  .shopCatImage {
+    margin-top: 5vw;
+    height: 17vw;
+    width: 38vw;
+  }
+
+  .shopMainImage {
+    width: 100vw;
+    height: 36vw;
+  }
+  .ShopContainer h1 {
+    font-size: 10vw;
+  }
+  .ShopContainer p {
+    color: rgb(59, 59, 59);
+    font-size: 3.5vw;
+    font-family: 'Barbieri-Book';
+  }
+  .ShopContainer h2 {
+    margin: 3vw 0 2vw 0;
+    font-size: 4vw;
+  }
+  .imageInfoContainer h3 {
+    font-size: 4vw;
+  }
+}
